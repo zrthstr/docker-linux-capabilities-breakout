@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  yespriv:
+    build: module
+    privileged: true
+  #nopriv:
+    #build: .
+    #privileged: false
+
+    #ports:
+    #  - "8000:5000"
+  #rand:
+  #  image: "redis:alpine"
