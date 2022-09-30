@@ -2,7 +2,7 @@
 
 ## Implemented so far
 ### CAP_SYS_MODULE
-Done according to this doc https://book.hacktricks.xyz/linux-hardening/privilege-escalation/linux-capabilities#cap_sys_module
+Done according to this excelent doc https://book.hacktricks.xyz/linux-hardening/privilege-escalation/linux-capabilities#cap_sys_module
 
 This escape works by first compiling a kernel module that subsequently gets loded via insmod into the host's kernel space.
 Note that this mean that the kernel headers for the compilaton need to match the hosts kernel.
