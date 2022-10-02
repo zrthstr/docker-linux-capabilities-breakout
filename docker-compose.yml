@@ -1,12 +1,24 @@
 version: "3.9"
 services:
-  yespriv:
-    build: module
-    privileged: true
-  #nopriv:
-    #build: .
+        #all_priv:
+        #build: sys_module
+        #privileged: true
+  sys_module:
+    build: sys_module
+    cap_add: [CAP_SYS_MODULE]
+    cap_drop: [ALL]
     #privileged: false
+  sys_chroot:
+    build: sys_chroot
+    cap_add: [CAP_SYS_CHROOT]
+    cap_drop: [ALL]
+  sys_admin:
+    build: sys_admin
+    cap_add: [CAP_SYS_MODULE]
+    #cap_add: [CAP_SYS_ADMIN]
+    cap_drop: [ALL]
 
+    #privileged: false
     #ports:
     #  - "8000:5000"
   #rand:
