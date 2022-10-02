@@ -4,6 +4,8 @@
 The goal is to collect all the documented CAP docker escapes in one resource with working PoC code that rann with from a single command.
 The information about these escapes, is to the best of my knowledge currently spread out widely throughout the internet on many different sites.
 
+read: https://grsecurity.net/false_boundaries_and_arbitrary_code_execution
+
 ## Implemented so far
 ### CAP_SYS_MODULE
 Done according to this excellent doc https://book.hacktricks.xyz/linux-hardening/privilege-escalation/linux-capabilities#cap_sys_module
